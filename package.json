@@ -25,7 +25,7 @@
   ],
   "keywords": [],
   "activationEvents": [
-    "onCommand:TEST.openWebview"
+    "*"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -64,9 +64,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config webpack.config.dev.js",
-    "server": "cross-env NODE_ENV=development nodemon ./src/server/index.js localhost 5000",
     "test": "node ./node_modules/vscode/bin/test",
-    "create:env": "node ./scripts/create-env.js",
     "build": "node .build/build.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },

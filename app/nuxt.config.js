@@ -4,7 +4,9 @@ import webpack from 'webpack';
 export default {
   target: 'static',
   ssr: false,
-  env: {},
+  env: {
+    LOCALHOST_API: 'http://localhost:5000'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Salesforce Query Editor',
@@ -65,7 +67,6 @@ export default {
         config.plugins.push(
           new WebpackObfuscator({
             compact: true,
-            identifierNamesGenerator: 'mangled',
             selfDefending: true,
             stringArray: true,
             rotateStringArray: true,

@@ -1,0 +1,10 @@
+[
+    {
+        "method" : "GET",
+        "url" : "v50.0/sobjects/Account/describe/"
+    },
+    {
+        "method" : "GET",
+        "url" : "v50.0/sobjects/Account/describe/"
+    }
+]

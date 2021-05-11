@@ -1,0 +1,50 @@
+{
+  "name": "simple-app",
+  "version": "0.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env LOCALHOST_API=http://localhost:5000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "lint:js": "eslint --fix --ext \".js,.vue\" --ignore-path .eslintignore .",
+    "lint": "yarn lint:js",
+    "build:vscode": "cross-env IS_VSCODE=true nuxt build",
+    "generate:vscode": "cross-env IS_VSCODE=true nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.8.3",
+    "debounce": "^1.2.1",
+    "html-entities": "^2.1.0",
+    "nuxt": "^2.14.12",
+    "object-hash": "^2.1.1",
+    "rgb-hex": "^3.0.0",
+    "soql-parser-js": "^3.0.0",
+    "tweetsodium": "^0.0.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@octokit/core": "^3.3.1",
+    "babel-eslint": "^10.1.0",
+    "base64-inline-loader": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "cypress": "^6.5.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "javascript-obfuscator": "^2.10.3",
+    "miragejs": "^0.1.41",
+    "monaco-editor-webpack-plugin": "^3.0.0",
+    "prettier": "^2.2.1",
+    "webpack-obfuscator": "^2.6.0"
+  }
+}

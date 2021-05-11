@@ -1,0 +1,5 @@
+{
+    "projectId" : "qxm8uy",
+    "baseUrl": "http://localhost:3000",
+    "ignoreTestFiles" : "**/examples/*.spec.js"
+}

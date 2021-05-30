@@ -1,21 +1,6 @@
 {
   "name": "test-extension",
   "displayName": "Test Extension",
-  "publisher": "allanoricil",
-  "preview": true,
-  "author": {
-    "name": "Allan Oricil",
-    "email": "allanoricilcos@outlook.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AllanOricil/SOQL-Editor-Issues.git"
-  },
-  "icon": ".images/icon.png",
-  "galleryBanner": {
-    "color": "#232323",
-    "theme": "dark"
-  },
   "version": "0.0.0",
   "engines": {
     "vscode": "^1.48.0"
@@ -25,42 +10,16 @@
   ],
   "keywords": [],
   "activationEvents": [
-    "*"
+    "onCommand:Test.openWebview"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "TEST.openWebview",
-        "title": "TEST: Open Webview",
-        "icon": {
-          "light": "/.images/database_light.svg",
-          "dark": "/.images/database_dark.svg"
-        }
+        "command": "Test.openWebview",
+        "title": "TEST: Open Webview"
       }
-    ],
-    "menus": {
-      "editor/title": [
-        {
-          "command": "TEST.openWebview",
-          "group": "navigation",
-          "when": "resourceFilename =~ /.cls/"
-        }
-      ],
-      "explorer/context": [
-        {
-          "command": "TEST.openWebview",
-          "when": "resourceFilename =~ /.cls/"
-        }
-      ],
-      "editor/context": [
-        {
-          "command": "TEST.openWebview",
-          "when": "resourceFilename =~ /.cls/"
-        }
-      ]
-    },
-    "configuration": {}
+    ]
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config webpack.config.dev.js",

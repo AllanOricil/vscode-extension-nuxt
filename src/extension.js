@@ -1,16 +1,15 @@
-// @ts-nocheck
 const vscode = require('vscode');
-const testExtension = require('./test-extension');
+const webviews = require('./webviews');
 const { startServer } = require('./server');
 
 const activate = async (context) => {
-    await testExtension.activate(context);
+    await webviews.activate(context);
     await startServer();
-    vscode.window.showInformationMessage('Test Extension is Activated');
+    vscode.window.showInformationMessage('Webview is Activated');
 }
 
 const deactivate = () => {
-    testExtension.deactivate();
+    webviews.deactivate();
 }
 
 module.exports = {

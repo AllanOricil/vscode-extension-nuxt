@@ -10,8 +10,12 @@ export default {
         }
     },
     mounted(){
-        this.$axios.get(`${process.env.LOCALHOST_API}/vscode/fingerprint`).then((response) => {
-            this.fingerprint = response.data;
+        this.$axios.get(`${process.env.LOCALHOST_API}/vscode/fingerprint`)
+        .then((response) => {
+            this.fingerprint = JSON.stringify(response.data);
+        })
+        .catch((error) => {
+            this.fingerprint = "error"
         })
     }
 }

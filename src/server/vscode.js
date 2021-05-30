@@ -1,4 +1,3 @@
-// @ts-nocheck
 const routes = require('express').Router();
 const { fingerprint } = require('../utilities/fingerprint');
 
@@ -14,6 +13,5 @@ routes.get("/fingerprint", (req, res) => {
         })
     }
 });
-
 
 module.exports = routes;

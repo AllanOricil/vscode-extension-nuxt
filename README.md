@@ -17,4 +17,9 @@
 
 Like I told in the other repo, I think the problem is related to the Webview frame being `pending`. And again, on VS Code 1.55.2 you will notice that the code runs as expected
 
-<img src="images/pending-frame.png" widht="800px">
+<img src="images/pending-frame.png" width="800px">
+
+
+Output when running on VS Code 1.55.2
+
+<img src="images/vscode-1.55.2-output.png" widht="800px">
